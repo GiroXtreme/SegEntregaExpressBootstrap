@@ -12,6 +12,8 @@ require('./helpers');
 const directorioPublico = path.join(__dirname,'../public');
 const directorioPartials = path.join(__dirname,'../partials');
 
+const puertoDespliegue = process.env.PORT||3000;
+
 const dirNode_modules = path.join(__dirname , '../node_modules')
 app.use('/css', express.static(dirNode_modules + '/bootstrap/dist/css'));
 app.use('/js', express.static(dirNode_modules + '/jquery/dist'));
@@ -151,6 +153,6 @@ app.post('/eliminarInscrito',(req,res)=>{
 	}
 	});
 
-app.listen(3000,()=>{
-	console.log('Escuchando en el puerto 3000!!!');
+app.listen(puertoDespliegue,()=>{
+	console.log('Servidor en el puerto'+puertoDespliegue);
 });
