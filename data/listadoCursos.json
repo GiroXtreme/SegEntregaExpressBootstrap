@@ -1,0 +1,20 @@
+[
+    {
+        "nombre": "Ingles",
+        "id": "1",
+        "descripcion": "Curso de Ingles",
+        "valor": "5000",
+        "modalidad": "virtual",
+        "intensidad": "5",
+        "estado": "D"
+    },
+    {
+        "nombre": "Francés",
+        "id": "2",
+        "descripcion": "Curso de Francés",
+        "valor": "100",
+        "modalidad": "virtual",
+        "intensidad": "40",
+        "estado": "D"
+    }
+]
